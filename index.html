@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="wordSetup">
+        <h1>Hangman Game</h1>
+        <label for="wordInput">Enter a word:</label>      <!--This is a div container that contains all elements related to setting up the word for the game. -->
+        <input type="password" id ='wordInput' >        <!-- This is an input field where users can type the word to be guessed. The type attribute is set to "password", so the input text will be hidden for privacy.  -->
+        <button id="submitWord">Submit Word</button>    <!-- This is a button that users can click to submit the word they've typed into the input field. -->
+    </div>
+    <div id="gameSpotLight">
+        <div id="wordSpotLight"></div>
+        <canvas id="hangManCanvas"></canvas>  <!--  canvas element that we use to draw graphics via scripting --> 
+        <div id="keyboard"></div>
+        
+    </div>  
+    <script src="frontPage.js"></script>
+    <script src="app.js" ></script>
+</body>
+</html>

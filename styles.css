@@ -1,0 +1,6 @@
+body{
+    background-color: aqua;
+}
+#myVideo {
+    filter: brightness(0.1);
+  }
